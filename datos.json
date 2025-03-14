@@ -1,5 +1,11 @@
 [
         {
+            "nro_documento" : "44386459",
+            "Nombres_y_Apellidos" : "FLORES CHOQUE EDWIN SANTOS",
+            "puntaje" : 100.0,
+            "Estado" : "Aptazo"
+        },
+        {
             "nro_documento" : "44405288",
             "Nombres_y_Apellidos" : "ABRAHAN CAUNA TOMA",
             "puntaje" : 30.0,
