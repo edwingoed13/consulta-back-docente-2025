@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const datos = require('./datos.json');  // Importamos el archivo JSON
+const path = require('path');  // Importar 'path' para manejar rutas correctamente
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,10 +10,11 @@ app.use(cors());
 
 // Ruta para servir el archivo JSON
 app.get('/api/datos', (req, res) => {
-    res.json(datos);
+    res.sendFile(path.join(__dirname, 'datos.json'));
 });
 
 // Iniciar el servidor
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+
