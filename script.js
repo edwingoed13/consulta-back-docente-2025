@@ -22,7 +22,7 @@ function consultarEstado() {
         return;
     }
 
-    fetch('http://localhost:3000/api/datos')
+    fetch('https://consulta-back-docente-2025.onrender.com')
         .then(response => response.json())
         .then(data => {
             const usuario = data.find(user => user.nro_documento === dni);
